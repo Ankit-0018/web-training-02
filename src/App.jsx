@@ -3,6 +3,7 @@ import Register from './Component/Register'
 import {Routes , Route } from "react-router-dom"
 import Loggin from './Component/Loggin'
 import Home from './Component/Home'
+import Button from './Component/Button'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
    <Route path = '/register' element = {<Register />}/>
    <Route path = '/loggin' element = {<Loggin />}/>
    <Route path = '/Home' element = {<Home />}/>
+   <Route path = '/' element = {<Button/>}/>
    </Routes>
   
    

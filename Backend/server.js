@@ -12,7 +12,11 @@ mongoose.connect(process.env.MONGO_URL).then(() => {
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+    origin: "https://web-training-02.onrender.com", // Replace with your frontend URL
+  };
+  
+  app.use(cors(corsOptions));
 app.use(express.json())
 
 app.use("/api/auth" , router)

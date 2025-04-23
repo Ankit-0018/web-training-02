@@ -16,7 +16,7 @@ const Register = () => {
     console.log("Submitted Data:", Data);
 
     try {
-      const response = await fetch("http://localhost:3000/api/auth/signup", {
+      const response = await fetch("https://web-training-02.onrender.com/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
